@@ -273,7 +273,7 @@ color: #6C757D;
   position: absolute;
 width: 455px;
 height: 32px;
-left: -200px;
+left: -150px;
 top: 16px;
 
 font-family: Roboto;
@@ -296,4 +296,10 @@ background: #F8D7DA;
 border: 1px solid #F5C6CB;
 box-sizing: border-box;
 border-radius: 4px;
+}
+
+.loadGif{
+  position: absolute;
+    top: 73px;
+    left: 590px;
 }
