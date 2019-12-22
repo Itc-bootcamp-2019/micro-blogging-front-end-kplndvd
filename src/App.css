@@ -1,0 +1,299 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.desktop{
+
+position: fixed;
+width: 1440px;
+height: 1024px;
+
+background: #15202B;
+}
+
+.navbar{
+  position: absolute;
+width: 1076px;
+height: 58px;
+left: 15px;
+top: 0px;
+background: #343A40;
+border-radius: 6px;
+margin-left: 181px;
+}
+
+.navbar_home{
+  
+position: absolute;
+width: 38px;
+height: 16px;
+left: 217.87px;
+top: 19px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+}
+
+.navbar_profile{
+  position: absolute;
+width: 41px;
+height: 16px;
+left: 300.87px;
+top: 19px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+
+color: rgba(255, 255, 255, 0.5);
+}
+
+.profile_header{
+  position: absolute;
+width: 103px;
+height: 42px;
+left: 369px;
+top: 110px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+
+color: #FFFFFF;
+}
+
+.username_header{
+  position: absolute;
+width: 90px;
+height: 21px;
+left: 368px;
+top: 178px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+color: rgba(255, 255, 255, 0.8);
+}
+
+.user_save_button{
+  position: absolute;
+width: 53px;
+height: 29px;
+left: 897px;
+top: 284px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.rectangle1{
+  position: absolute;
+width: 600px;
+height: 180px;
+left: 367px;
+top: 63px;
+background-color: #15202B;
+border: 2px solid #CCCCCC;
+box-sizing: border-box;
+border-radius: 6px;
+resize: none;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+
+color: #CCCCCC;
+}
+.rectangle2{
+  
+position: relative;
+width: 600px;
+height: 100px;
+left: 367px;
+top: 249px;
+margin-top:4px;
+background: #343A40;
+border-radius: 6px;
+}
+
+
+
+
+.tweet_button{
+  position: absolute;
+  width: 68px;
+  height: 34px;
+  left: 891px;
+  top: 200px;
+  
+  background: #007BFF;
+  border-radius: 4px;
+}
+
+.tweet_button_text
+{
+position: absolute;
+width: 53px;
+height: 29px;
+left: 897px;
+top: 133px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.over_140_error{
+position: absolute;
+width: 330px;
+height: 15px;
+left: 387px;
+top: 143px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #721C24;
+}
+
+.userNameinTweet{
+  position: relative;
+width: 162px;
+height: 12px;
+left: 12px;
+top: 1px;
+z-index: 3;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+
+color: #6C757D;
+}
+.time_date{
+  position: relative;
+width: 169px;
+height: 16px;
+left: 428px;
+top: 1px;
+z-index: 3;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: right;
+
+color: #6C757D;
+}
+
+.innerText{
+  position: absolute;
+width: 455px;
+height: 32px;
+left: -200px;
+top: 16px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #FFFFFF;
+}
+
+.oneFortyBox{
+position: absolute;
+width: 338px;
+height: 29px;
+left: 376px;
+top: 204px;
+
+background: #F8D7DA;
+border: 1px solid #F5C6CB;
+box-sizing: border-box;
+border-radius: 4px;
+}
