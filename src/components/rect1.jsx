@@ -30,13 +30,14 @@ class Rect1 extends React.Component {
 
         const Tweet = { content: this.state.typedChars, userName: this.state.username, date: new Date().toISOString() }
         const updatedTweets = [Tweet, ...this.state.tweets]
-        this.setState({ Tweets: updatedTweets });
+        this.setState({ tweets: updatedTweets });
         try {
             AddTweets(Tweet);
         }
         catch (error) {
             alert(error);
         }
+        
     }
 
 
