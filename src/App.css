@@ -39,11 +39,9 @@
 
 
 .desktop{
-
 position: fixed;
 width: 1440px;
 height: 1024px;
-
 background: #15202B;
 }
 
@@ -65,7 +63,6 @@ width: 38px;
 height: 16px;
 left: 217.87px;
 top: 19px;
-
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
@@ -84,7 +81,6 @@ width: 41px;
 height: 16px;
 left: 300.87px;
 top: 19px;
-
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
@@ -92,60 +88,7 @@ font-size: 14px;
 line-height: 16px;
 display: flex;
 align-items: center;
-
 color: rgba(255, 255, 255, 0.5);
-}
-
-.profile_header{
-  position: absolute;
-width: 103px;
-height: 42px;
-left: 369px;
-top: 110px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 36px;
-line-height: 42px;
-
-color: #FFFFFF;
-}
-
-.username_header{
-  position: absolute;
-width: 90px;
-height: 21px;
-left: 368px;
-top: 178px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 21px;
-/* identical to box height */
-
-color: rgba(255, 255, 255, 0.8);
-}
-
-.user_save_button{
-  position: absolute;
-width: 53px;
-height: 29px;
-left: 897px;
-top: 284px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #FFFFFF;
 }
 
 .rectangle1{

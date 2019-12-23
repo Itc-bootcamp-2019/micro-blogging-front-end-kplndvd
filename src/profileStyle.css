@@ -1,0 +1,93 @@
+/* Add another page that presents the current user username (which should be hard
+coded until now), and has a form to change the username.
+● You should save the new username locally whenever changed, and send it to the
+server when creating a new tweet.
+● Add a navbar to the top of the screen that keeps it position no matter which page
+you are at, with “Home” and “Profile” links. */
+
+
+.profile-header{
+position: absolute;
+width: 103px;
+height: 42px;
+left: 369px;
+top: 110px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+
+color: #FFFFFF;
+}
+
+.user-header {
+    position: absolute;
+width: 90px;
+height: 21px;
+left: 368px;
+top: 178px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+color: rgba(255, 255, 255, 0.8);
+
+}
+
+.typeBox {
+    
+position: absolute;
+width: 600px;
+height: 61px;
+left: 367px;
+top: 205px;
+border: 2px solid #CCCCCC;
+box-sizing: border-box;
+border-radius: 6px;
+}
+
+.Profile-inner-Text.{
+    position: absolute;
+width: 59px;
+height: 19px;
+left: 383px;
+top: 225px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+}
+
+.saveButtonText{
+    position: absolute;
+width: 53px;
+height: 29px;
+left: 897px;
+top: 284px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+}
+
+.saveButton{
+    position: absolute;
+width: 68px;
+height: 34px;
+left: 889px;
+top: 282px;
+
+background: #007BFF;
+border-radius: 4px;
+}

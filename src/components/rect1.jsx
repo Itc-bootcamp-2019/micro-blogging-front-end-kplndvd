@@ -5,14 +5,16 @@ import { AddTweets } from "../lib/api.jsx"
 import { GetTweets } from "../lib/api.jsx"
 
 
+
 class Rect1 extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             typedChars: "",
-            Tweets: [],
+            tweets: [],
             tooLong: false,
-            loadingServer: true
+            loadingServer: true,
+            username:''
 
         }
     }
@@ -26,8 +28,8 @@ class Rect1 extends React.Component {
 
     handleButtonSubmit(event) {
 
-        const Tweet = { content: this.state.typedChars, userName: 'username', date: new Date().toISOString() }
-        const updatedTweets = [Tweet, ...this.state.Tweets]
+        const Tweet = { content: this.state.typedChars, userName: this.state.username, date: new Date().toISOString() }
+        const updatedTweets = [Tweet, ...this.state.tweets]
         this.setState({ Tweets: updatedTweets });
         try {
             AddTweets(Tweet);
@@ -40,13 +42,18 @@ class Rect1 extends React.Component {
 
     componentDidMount() {
 
-        this.setState({ loadingServer: true })
+        const userNameUpdate = JSON.parse(localStorage.getItem('Profile'));
+        this.setState({
+          username: userNameUpdate,
+          loadingServer: true
+        })
 
+        
         const tweets = GetTweets().then(
             response => {
 
                 this.setState({
-                    Tweets: response.data.tweets,
+                    tweets: response.data.tweets,
                     loadingServer: false
                 })
 
@@ -54,7 +61,6 @@ class Rect1 extends React.Component {
         )
 
     }
-
 
     oneFortycheck(event) {
         let toolongtweet = event.target.value.length > 140
@@ -82,7 +88,7 @@ class Rect1 extends React.Component {
                 </div>
                 {this.state.loadingServer && <img className="loadGif" src="https://media1.giphy.com/media/y1ZBcOGOOtlpC/giphy.gif?cid=790b7611b62980205006279f615ca2d4386ed63ce2ae9101&rid=giphy.gif" />}
 
-                {!this.state.loadingServer && <Rect2 TwitList={this.state.Tweets} />}
+                {!this.state.loadingServer && <Rect2 tweets={this.state.tweets} />}
             </div>
 
         )
